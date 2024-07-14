@@ -32,6 +32,10 @@ hdfs dfs -ls /user/hadoop/
 
 ## Python
 ### Librairies et dépendances
+```bash
+pip install pyspark
+pip install plotly
+```
 
 ### Mise en place de PySpark
 
