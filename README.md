@@ -2,7 +2,8 @@
 
 ## Mise en place de l'environement
 
-### Création de l'utilisateur Hadoop
+### Création de l'utilisateur Hadoop et attribution des droits
+
 ```bash
 sudo useradd -m -s /bin/bash hadoop
 sudo passwd hadoop
@@ -16,9 +17,9 @@ chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ```
 
-### Ajout des lignes nécessaires dans la config hadoop
-nano ~/.bashrc
+- Ajout des lignes nécessaires dans la config hadoop
 ```bash
+nano ~/.bashrc
   # Hadoop environment variables
   export HADOOP_HOME=/usr/local/hadoop
   export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
