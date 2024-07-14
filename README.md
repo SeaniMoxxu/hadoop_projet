@@ -21,10 +21,11 @@ nano ~/.bashrc
   export HADOOP_HOME=/usr/local/hadoop
   export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 ```
-- Copie du fichier
+- Copie du fichier puis lister les fichiers dans hadoop
+```bash
 hdfs dfs -put chemin/nomdufichier /user/hadoop/
-- Lister les fichier hadoop
 hdfs dfs -ls /user/hadoop/
+```
 
 ## Python
 ### Librairies et dépendances
