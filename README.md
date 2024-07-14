@@ -37,9 +37,14 @@ pip install pyspark
 pip install plotly
 ```
 
-### Mise en place de PySpark
-
+### Mise en place de PySpark et Plotly
+```bash
+conda install -c conda-forge pyspark
+conda install -c plotly plotly
+conda list | grep pyspark
+conda list | grep plotly
 ### Premier test avec Plotly
+```
 
 ### Commande Hadoop utile 
 ```bash
