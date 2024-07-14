@@ -37,3 +37,9 @@ hdfs dfs -ls /user/hadoop/
 
 ### Premier test avec Plotly
 
+### Commande Hadoop utile 
+```bash
+start-dfs.sh # Lancement name et data nodes
+start-yarn.sh # Lancement ressource manager et yarn manager
+hdfs dfsadmin -report # Rapport détaillé sur le système de fichier HDFS
+```
