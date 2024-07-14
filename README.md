@@ -3,6 +3,7 @@
 ## Mise en place de l'environement
 
 ### Création de l'utilisateur Hadoop
+```bash
 sudo useradd -m -s /bin/bash hadoop
 sudo passwd hadoop
 sudo usermod -aG sudo hadoop
@@ -13,6 +14,7 @@ ssh-keygen -t rsa -P ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
+```
 
 ### Ajout des lignes nécessaires dans la config hadoop
 nano ~/.bashrc
