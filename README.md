@@ -50,5 +50,15 @@ conda list | grep plotly
 ```bash
 start-dfs.sh # Lancement name et data nodes
 start-yarn.sh # Lancement ressource manager et yarn manager
+hdfs dfs -ls # Lister les fichiers présents sur hadoop
 hdfs dfsadmin -report # Rapport détaillé sur le système de fichier HDFS
+```
+
+### Contenu du fichier .bashrc fichier de gestion de l'environement utilisateur
+```bash
+nano ~/.bashrc # Ouverture du fichier de configuration
+# Hadoop environment variables
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin
+source ~/.bashrc # Recharge le contenu mis à jour
 ```
